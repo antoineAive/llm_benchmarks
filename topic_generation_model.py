@@ -342,7 +342,7 @@ class HFLlama3TopicGeneration(APIModel):
         t1 = time.time()
         self.client = InferenceClient(
             "meta-llama/Meta-Llama-3-70B-Instruct",
-            token="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",
+            token="",
         )
         self.loading_time = time.time() - t1
 
