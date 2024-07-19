@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "llms-benchmark"
+version = "0.1.0"
+description = ""
+authors = ["Antoine <antoine@aive.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformers = "4.41.2"
+torch = "2.2.1"
+xformers = "<0.0.27"
+trl = "^0.9.6"
+peft = "^0.11.1"
+accelerate = "^0.32.1"
+bitsandbytes = "^0.43.1"
+pydantic = "^2.8.2"
+unsloth = {git = "https://github.com/unslothai/unsloth.git", extras = ["colab-new"], "rev" = "933d9fe2cb2459f949ee2250e90a5b610d277eab"}
+openai = "^1.35.13"
+groq = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
